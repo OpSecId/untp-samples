@@ -1,0 +1,59 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dia/0.6.0/"
+      ],
+      "type": [
+        "DigitalIdentityAnchor",
+        "VerifiableCredential"
+      ],
+      "id": "urn:uuid:33637fbf-3988-4cca-9800-8d8e39b81d90",
+      "issuer": {
+        "id": "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies",
+        "name": "Registrar of Companies"
+      },
+      "credentialSubject": {
+        "type": [
+          "RegisteredIdentity"
+        ],
+        "id": "did:web:opsecid.github.io:untp-samples:organisations:A0061056",
+        "name": "TECK COAL LIMITED",
+        "registeredId": "A0061056",
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://www.bcregistry.gov.bc.ca/",
+          "name": "BC Registry"
+        },
+        "registerType": "Business"
+      },
+      "proof": [
+        {
+          "type": "DataIntegrityProof",
+          "proofPurpose": "assertionMethod",
+          "verificationMethod": "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies#z6MkqM8TFZfsgxL8PCGzkWs54Ev8bwXcWBpcfwDhEzx3heNu",
+          "cryptosuite": "eddsa-jcs-2022",
+          "proofValue": "z25u5AwMCAerGPjV5VLtJPA6FsP9kK9yawztbTdbB23ryK7ramfCXr335VTQBzm7dxfHYjzWYEwbHNMVrmXm8qeuM"
+        }
+      ]
+    }
+  ],
+  "proof": [
+    {
+      "type": "DataIntegrityProof",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:web:opsecid.github.io:untp-samples:organisations:A0061056#z6MkgCAioUZoeiiXfkNUPsUy2eM3a2EQzLqs39WBSwWJxcsc",
+      "cryptosuite": "eddsa-jcs-2022",
+      "proofValue": "z2f5CaixEffXvDD9WZFTrN7Eeg5Vz8FocK6YpCcNEBzAmnkva4hstQBCmP9m1HEF25HaGWjxrDXrZ2Sf8Nww3v8Di"
+    }
+  ]
+}
