@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/multikey/v1"
+    ],
+    "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-officer",
+    "authentication": [
+        "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-officer#z6MkpG4FP2EcFKN3EC77AewqaE9rxYK2pYkvMn78TVvuuUwb"
+    ],
+    "assertionMethod": [
+        "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-officer#z6MkpG4FP2EcFKN3EC77AewqaE9rxYK2pYkvMn78TVvuuUwb"
+    ],
+    "verificationMethod": [
+        {
+            "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-officer#z6MkpG4FP2EcFKN3EC77AewqaE9rxYK2pYkvMn78TVvuuUwb",
+            "type": "Multikey",
+            "controller": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-officer",
+            "publicKeyMultibase": "z6MkpG4FP2EcFKN3EC77AewqaE9rxYK2pYkvMn78TVvuuUwb"
+        }
+    ],
+    "alsoKnownAs": [
+        "did:webvh:QmZ4QBrs7L3jx61JuU2TqMtZLBLPcK8MV3mK9oVvLWGsNw:opsecid.github.io:untp-samples:regulators:chief-permitting-officer"
+    ]
+}

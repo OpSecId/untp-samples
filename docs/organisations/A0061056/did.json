@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://www.w3.org/ns/did/v1",
+        "https://w3id.org/security/multikey/v1"
+    ],
+    "id": "did:web:opsecid.github.io:untp-samples:organisations:A0061056",
+    "authentication": [
+        "did:web:opsecid.github.io:untp-samples:organisations:A0061056#z6MkgCAioUZoeiiXfkNUPsUy2eM3a2EQzLqs39WBSwWJxcsc"
+    ],
+    "assertionMethod": [
+        "did:web:opsecid.github.io:untp-samples:organisations:A0061056#z6MkgCAioUZoeiiXfkNUPsUy2eM3a2EQzLqs39WBSwWJxcsc"
+    ],
+    "verificationMethod": [
+        {
+            "id": "did:web:opsecid.github.io:untp-samples:organisations:A0061056#z6MkgCAioUZoeiiXfkNUPsUy2eM3a2EQzLqs39WBSwWJxcsc",
+            "type": "Multikey",
+            "controller": "did:web:opsecid.github.io:untp-samples:organisations:A0061056",
+            "publicKeyMultibase": "z6MkgCAioUZoeiiXfkNUPsUy2eM3a2EQzLqs39WBSwWJxcsc"
+        }
+    ],
+    "alsoKnownAs": [
+        "did:webvh:QmPBZhGpNumt53GNujTEASbTVu73oNFQc4YfG7gy4LEw7z:opsecid.github.io:untp-samples:organisations:A0061056"
+    ]
+}

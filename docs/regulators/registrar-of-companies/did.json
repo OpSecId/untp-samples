@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://w3id.org/security/multikey/v1",
+        "https://www.w3.org/ns/did/v1"
+    ],
+    "id": "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies",
+    "authentication": [
+        "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies#z6MkqM8TFZfsgxL8PCGzkWs54Ev8bwXcWBpcfwDhEzx3heNu"
+    ],
+    "assertionMethod": [
+        "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies#z6MkqM8TFZfsgxL8PCGzkWs54Ev8bwXcWBpcfwDhEzx3heNu"
+    ],
+    "verificationMethod": [
+        {
+            "id": "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies#z6MkqM8TFZfsgxL8PCGzkWs54Ev8bwXcWBpcfwDhEzx3heNu",
+            "type": "Multikey",
+            "controller": "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies",
+            "publicKeyMultibase": "z6MkqM8TFZfsgxL8PCGzkWs54Ev8bwXcWBpcfwDhEzx3heNu"
+        }
+    ],
+    "alsoKnownAs": [
+        "did:webvh:QmfVcrDwk9oihUC5nMskPHQUkUFZBnn7gPwreHYcitUHXY:opsecid.github.io:untp-samples:regulators:registrar-of-companies"
+    ]
+}
