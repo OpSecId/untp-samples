@@ -1,0 +1,102 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "holder": "did:web:opsecid.github.io:untp-samples:facilities:mines:6542d850dc00aa001b11a77b",
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dfr/0.6.0/"
+      ],
+      "type": [
+        "DigitalFacilityRecord",
+        "VerifiableCredential"
+      ],
+      "id": "urn:uuid:a8dc4297-6339-41d2-8343-b28263a11237",
+      "issuer": {
+        "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
+        "name": "Chief Permitting Inspector"
+      },
+      "credentialSubject": {
+        "type": [
+          "FacilityRecord"
+        ],
+        "facility": {
+          "type": [
+            "Facility"
+          ],
+          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:6542d850dc00aa001b11a77b",
+          "name": "Cariboo Gold Project",
+          "description": "CARIBOO GOLD PROJECT \nMines Act and Environmental Management Act Joint Permit Application\nThe Public Comment Period is now closed.",
+          "registeredId": "6542d850dc00aa001b11a77b",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://mines.nrs.gov.bc.ca/",
+            "name": "BC Natural Resource Online Services"
+          },
+          "countryOfOperation": "CA",
+          "operatedByParty": {
+            "id": "did:web:opsecid.github.io:untp-samples:organisations:BC0091892",
+            "name": "BARKERVILLE GOLD MINES LTD.",
+            "registeredId": "BC0091892",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://www.bcregistry.gov.bc.ca/",
+              "name": "BC Registry"
+            }
+          },
+          "locationInformation": {
+            "geoLocation": {
+              "type": "Point",
+              "coordinates": [
+                -121.4065,
+                53.01043
+              ]
+            }
+          },
+          "processCategory": [
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Gold"
+            }
+          ]
+        },
+        "conformityClaim": [
+          {
+            "type": [
+              "Claim",
+              "Declaration"
+            ],
+            "referenceStandard": {
+              "type": [
+                "Standard"
+              ],
+              "id": "",
+              "name": ""
+            },
+            "referenceRegulation": {
+              "type": [
+                "Regulation"
+              ]
+            }
+          }
+        ],
+        "assessmentCriteria": [],
+        "assessmentDate": "2023-11-01T22:59:28.944Z",
+        "conformance": true,
+        "conformityTopic": "governance.compliance",
+        "conformityEvidence": {}
+      }
+    }
+  ]
+}

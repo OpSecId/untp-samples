@@ -1,0 +1,108 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "holder": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e41a4635c865df00d0ca",
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dfr/0.6.0/"
+      ],
+      "type": [
+        "DigitalFacilityRecord",
+        "VerifiableCredential"
+      ],
+      "id": "urn:uuid:abc046eb-56e1-4b55-a106-549735f48658",
+      "issuer": {
+        "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
+        "name": "Chief Permitting Inspector"
+      },
+      "credentialSubject": {
+        "type": [
+          "FacilityRecord"
+        ],
+        "facility": {
+          "type": [
+            "Facility"
+          ],
+          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e41a4635c865df00d0ca",
+          "name": "May Mac Mine",
+          "description": "The May Mac mine is located southwest of Greenwood, in southern BC near the US border. The mine operated intermittently from 1903 to 1983. Golden Dawn Minerals is currently investigating restarting operations and is actively exploring the site.",
+          "registeredId": "5fa1e41a4635c865df00d0ca",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://mines.nrs.gov.bc.ca/",
+            "name": "BC Natural Resource Online Services"
+          },
+          "countryOfOperation": "CA",
+          "operatedByParty": {
+            "id": "did:web:opsecid.github.io:untp-samples:organisations:BC1492632",
+            "name": "PHOENIX COPPER COMPANY INC.",
+            "registeredId": "BC1492632",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://www.bcregistry.gov.bc.ca/",
+              "name": "BC Registry"
+            }
+          },
+          "locationInformation": {
+            "geoLocation": {
+              "type": "Point",
+              "coordinates": [
+                -118.7061033,
+                49.0599807
+              ]
+            }
+          },
+          "processCategory": [
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Silver"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Lead"
+            }
+          ]
+        },
+        "conformityClaim": [
+          {
+            "type": [
+              "Claim",
+              "Declaration"
+            ],
+            "referenceStandard": {
+              "type": [
+                "Standard"
+              ],
+              "id": "",
+              "name": ""
+            },
+            "referenceRegulation": {
+              "type": [
+                "Regulation"
+              ]
+            }
+          }
+        ],
+        "assessmentCriteria": [],
+        "assessmentDate": "2020-11-03T23:13:30.723Z",
+        "conformance": true,
+        "conformityTopic": "governance.compliance",
+        "conformityEvidence": {}
+      }
+    }
+  ]
+}

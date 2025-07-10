@@ -1,0 +1,114 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "holder": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e42a4635c865df00d57f",
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dfr/0.6.0/"
+      ],
+      "type": [
+        "DigitalFacilityRecord",
+        "VerifiableCredential"
+      ],
+      "id": "urn:uuid:4c56e331-332f-4f85-9630-9df5e0c52cf1",
+      "issuer": {
+        "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
+        "name": "Chief Permitting Inspector"
+      },
+      "credentialSubject": {
+        "type": [
+          "FacilityRecord"
+        ],
+        "facility": {
+          "type": [
+            "Facility"
+          ],
+          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e42a4635c865df00d57f",
+          "name": "Red Chris Mine",
+          "description": "The Red Chris copper-gold mine is located approximately 18 km southeast of the village of Iskut and 80 km south of Dease Lake. Mine construction commenced in May 2012 and was completed in November 2014. Red Chris produced its first copper concentrate on February 17, 2015, and the first loads of concentrate were trucked to Stewart Bulk Terminals on February 27, 2015. The first shipment of Red Chris concentrate was loaded onto the M/V Edward Oldendorff on April 11, 2015. The mine began regular production in June 2015.",
+          "registeredId": "5fa1e42a4635c865df00d57f",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://mines.nrs.gov.bc.ca/",
+            "name": "BC Natural Resource Online Services"
+          },
+          "countryOfOperation": "CA",
+          "operatedByParty": {
+            "id": "did:web:opsecid.github.io:untp-samples:organisations:BC1200288",
+            "name": "NEWCREST RED CHRIS MINING LIMITED",
+            "registeredId": "BC1200288",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://www.bcregistry.gov.bc.ca/",
+              "name": "BC Registry"
+            }
+          },
+          "locationInformation": {
+            "geoLocation": {
+              "type": "Point",
+              "coordinates": [
+                -129.7662143,
+                57.7313332
+              ]
+            }
+          },
+          "processCategory": [
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Silver"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Gold"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Copper"
+            }
+          ]
+        },
+        "conformityClaim": [
+          {
+            "type": [
+              "Claim",
+              "Declaration"
+            ],
+            "referenceStandard": {
+              "type": [
+                "Standard"
+              ],
+              "id": "",
+              "name": ""
+            },
+            "referenceRegulation": {
+              "type": [
+                "Regulation"
+              ]
+            }
+          }
+        ],
+        "assessmentCriteria": [],
+        "assessmentDate": "2020-11-03T23:13:46.749Z",
+        "conformance": true,
+        "conformityTopic": "governance.compliance",
+        "conformityEvidence": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1"
+  ],
+  "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:6581f71e18456f001bc7a3c4",
+  "service": [
+    {
+      "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:6581f71e18456f001bc7a3c4#bc-mine-information",
+      "type": "LinkedDomain",
+      "serviceEndpoint": "https://mines.nrs.gov.bc.ca/mine/6581f71e18456f001bc7a3c4"
+    }
+  ]
+}

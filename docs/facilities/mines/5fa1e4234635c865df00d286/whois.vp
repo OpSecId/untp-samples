@@ -1,0 +1,126 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "holder": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4234635c865df00d286",
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dfr/0.6.0/"
+      ],
+      "type": [
+        "DigitalFacilityRecord",
+        "VerifiableCredential"
+      ],
+      "id": "urn:uuid:f6b0a2a1-0563-417d-ad38-5ac61acb2b6f",
+      "issuer": {
+        "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
+        "name": "Chief Permitting Inspector"
+      },
+      "credentialSubject": {
+        "type": [
+          "FacilityRecord"
+        ],
+        "facility": {
+          "type": [
+            "Facility"
+          ],
+          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4234635c865df00d286",
+          "name": "Myra Falls Operations",
+          "description": "<p>Myra Falls Operations is an underground mine located within Strathcona Provincial Park at the south end of Buttle Lake, 90km southwest of the Campbell River. The mine began production in 1966, and is currently owned and operated by Nyrstar Myra Falls Ltd., a division of Swiss-based Nyrstar N.V.&nbsp;",
+          "registeredId": "5fa1e4234635c865df00d286",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://mines.nrs.gov.bc.ca/",
+            "name": "BC Natural Resource Online Services"
+          },
+          "countryOfOperation": "CA",
+          "operatedByParty": {
+            "id": "did:web:opsecid.github.io:untp-samples:organisations:C0989527",
+            "name": "MYRA FALLS MINE LTD.",
+            "registeredId": "C0989527",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://www.bcregistry.gov.bc.ca/",
+              "name": "BC Registry"
+            }
+          },
+          "locationInformation": {
+            "geoLocation": {
+              "type": "Point",
+              "coordinates": [
+                -125.5915003,
+                49.5706707
+              ]
+            }
+          },
+          "processCategory": [
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Silver"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Lead"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Zinc"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Copper"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Gold"
+            }
+          ]
+        },
+        "conformityClaim": [
+          {
+            "type": [
+              "Claim",
+              "Declaration"
+            ],
+            "referenceStandard": {
+              "type": [
+                "Standard"
+              ],
+              "id": "",
+              "name": ""
+            },
+            "referenceRegulation": {
+              "type": [
+                "Regulation"
+              ]
+            }
+          }
+        ],
+        "assessmentCriteria": [],
+        "assessmentDate": "2020-11-03T23:13:39.069Z",
+        "conformance": true,
+        "conformityTopic": "governance.compliance",
+        "conformityEvidence": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "holder": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f34635c865df00c52a",
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dfr/0.6.0/"
+      ],
+      "type": [
+        "DigitalFacilityRecord",
+        "VerifiableCredential"
+      ],
+      "id": "urn:uuid:f6dcef80-3e7f-484d-a93a-3626db6bff6c",
+      "issuer": {
+        "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
+        "name": "Chief Permitting Inspector"
+      },
+      "credentialSubject": {
+        "type": [
+          "FacilityRecord"
+        ],
+        "facility": {
+          "type": [
+            "Facility"
+          ],
+          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f34635c865df00c52a",
+          "name": "Boss Mountain Mine",
+          "description": "The Boss Mountain Mine is located east of Williams Lake, and is currently closed.",
+          "registeredId": "5fa1e3f34635c865df00c52a",
+          "idScheme": {
+            "type": [
+              "IdentifierScheme"
+            ],
+            "id": "https://mines.nrs.gov.bc.ca/",
+            "name": "BC Natural Resource Online Services"
+          },
+          "countryOfOperation": "CA",
+          "operatedByParty": {
+            "id": "did:web:opsecid.github.io:untp-samples:organisations:A0099499",
+            "name": "GLENCORE CANADA CORPORATION",
+            "registeredId": "A0099499",
+            "idScheme": {
+              "type": [
+                "IdentifierScheme"
+              ],
+              "id": "https://www.bcregistry.gov.bc.ca/",
+              "name": "BC Registry"
+            }
+          },
+          "locationInformation": {
+            "geoLocation": {
+              "type": "Point",
+              "coordinates": [
+                -120.8829905,
+                52.0993902
+              ]
+            }
+          },
+          "processCategory": [
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Molybdenum"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Rhenium"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Silver"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Zinc"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Tungsten"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Bismuth"
+            },
+            {
+              "type": [
+                "Classification"
+              ],
+              "name": "Copper"
+            }
+          ]
+        },
+        "conformityClaim": [
+          {
+            "type": [
+              "Claim",
+              "Declaration"
+            ],
+            "referenceStandard": {
+              "type": [
+                "Standard"
+              ],
+              "id": "",
+              "name": ""
+            },
+            "referenceRegulation": {
+              "type": [
+                "Regulation"
+              ]
+            }
+          }
+        ],
+        "assessmentCriteria": [],
+        "assessmentDate": "2020-11-03T23:12:51.970Z",
+        "conformance": true,
+        "conformityTopic": "governance.compliance",
+        "conformityEvidence": {}
+      }
+    }
+  ]
+}

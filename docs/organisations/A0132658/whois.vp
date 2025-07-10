@@ -16,7 +16,7 @@
         "DigitalIdentityAnchor",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:12507a45-b819-4297-8d96-84517da6ba41",
+      "id": "urn:uuid:2ada29c6-296b-4478-98cf-a365ae92feab",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies",
         "name": "Registrar of Companies"
