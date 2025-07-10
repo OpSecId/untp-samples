@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:6ab921bc-bef2-439c-90cc-c27670b492d5",
+      "id": "urn:uuid:28e0825b-43a2-43dd-8291-9fe8661ce567",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f04635c865df00c4c0",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f04635c865df00c4c0",
           "name": "Bell Mine",
           "description": "Bell, located 16 km north of the Village of Granisle, operated from 1970 to 1992. ",
           "registeredId": "5fa1e3f04635c865df00c4c0",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Copper"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Copper",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14210",
+              "code": "14210"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:12:48.947Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

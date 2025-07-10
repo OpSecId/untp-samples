@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:84107bf6-31f1-4da9-82cb-327645d0287c",
+      "id": "urn:uuid:d3883bd8-84b5-4641-b816-bb6be6ea4082",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4144635c865df00cf19",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4144635c865df00cf19",
           "name": "KSM Mine",
           "description": "The KSM copper-gold project is located in northwest BC, approximately 65 km northwest of Stewart, within the Nass Area, as defined in the Nisga'a Final Agreement. KSM received an Environmental Assessment Certificate on July 29, 2014. Authorization applications for pre-construction work (e.g., roads, clearing, tunnel construction) at the KSM project site were submitted under the Concurrent Approval Regulation of the Environmental Assessment Act. Review of these applications took place through a Mine Review Committee (MRC), and a mineral exploration (MX) permit issued in September 2014 allows for some early construction. An MRC for the next phase of permit applications not yet been established.",
           "registeredId": "5fa1e4144635c865df00cf19",
@@ -67,13 +67,21 @@
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Copper",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14210",
+              "code": "14210"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Copper"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -97,7 +105,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:24.683Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

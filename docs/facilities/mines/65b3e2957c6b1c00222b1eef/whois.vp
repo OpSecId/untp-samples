@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:c01020b1-78d9-4d21-86e6-74a9c9d8eb5a",
+      "id": "urn:uuid:d3e38935-a40c-4b69-8ad5-2e710bde39e2",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:65b3e2957c6b1c00222b1eef",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:65b3e2957c6b1c00222b1eef",
           "name": "Record Ridge [Magnesium Mine] / Midnight Property",
           "description": "West High Yield (W.H.Y.) Resources Ltd.'s proposed RRIMM Project is an intermediate-advanced stage magnesium exploration project covering 8,972 hectares. It is located in the Lower Columbia/Old Glory Area B Kootenay Region, BC, Canada, 7.5 km west-southwest of the City of Rossland, 5.5 km north of the Canada-US International Border.\nThe RRIMM Project area is centered at approximately 49\u00b002\u201929\u201d N Latitude and 117\u00b053\u201944\u201d W Longitude\n",
           "registeredId": "65b3e2957c6b1c00222b1eef",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Magnesium"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Magnesium",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41601",
+              "code": "41601"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2024-01-26T16:49:25.492Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

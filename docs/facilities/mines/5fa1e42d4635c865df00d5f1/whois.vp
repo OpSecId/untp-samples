@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:399ce6f3-85bc-4518-9caa-60a5a4915c6a",
+      "id": "urn:uuid:365333d3-9c26-49a8-b7d2-8a27abbedf3d",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e42d4635c865df00d5f1",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e42d4635c865df00d5f1",
           "name": "Samatosum Mine",
           "description": "The Samatosum mine is located 60 km north of Kamloops near the town or Barriere. Samatosum produced silver, gold, zinc, lead, copper and antimony from 1989 to 1992. Disturbance at the site includes a small open pit, a 32-hectare waste rock dump, a flooded tailings impoundment, several borrow pits and a plantsite area.",
           "registeredId": "5fa1e42d4635c865df00d5f1",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:49.501Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

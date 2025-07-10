@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:eb1b600d-a1f2-4b40-8a53-268fe74cf290",
+      "id": "urn:uuid:d1362743-48e1-4f18-acd2-275980f99fc9",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f54635c865df00c575",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f54635c865df00c575",
           "name": "Brenda Mine",
           "description": "Brenda is a closed copper-molybdenum mine site located in the Central Okanagan, approximately 22 km west of Peachland. The mine operated from 1970 to 1990.",
           "registeredId": "5fa1e3f54635c865df00c575",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Copper"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Copper",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14210",
+              "code": "14210"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:12:53.319Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

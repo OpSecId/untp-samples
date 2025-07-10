@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:1c94f732-2e2a-49e1-9826-16b21fad7e73",
+      "id": "urn:uuid:b3f6dd96-56fb-48bb-a96f-27deff21e372",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e43f4635c865df00d8a5",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e43f4635c865df00d8a5",
           "name": "Willow Creek Mine",
           "description": "<p>The Willow Creek mine is located southwest of Chetwynd, near the Pine Pass in northeast B.C.</p>",
           "registeredId": "5fa1e43f4635c865df00d8a5",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Metallurgic"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "metallurgic",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14",
+              "code": "14"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:14:07.858Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

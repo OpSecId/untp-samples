@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:9d3d96aa-3825-4e17-b90f-6128b0ab3b1f",
+      "id": "urn:uuid:32d9438f-d9f3-4222-9d81-b1faf6773bb3",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e40b4635c865df00cb9a",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e40b4635c865df00cb9a",
           "name": "Goldstream Mine",
           "description": "Located near Revelstoke in southeast BC, the Goldstream mine operated between 1983 and 1996. Mining operations started with a small open pit. Some underground mining was undertaken between 1991 and 1996. In 2010, Barkerville Gold Mines Ltd. purchased the Goldstream property and related mineral leases and claims with the intent to relocate the mill facility to the base of Cow Mountain, near Wells.",
           "registeredId": "5fa1e40b4635c865df00cb9a",
@@ -67,19 +67,31 @@
               "type": [
                 "Classification"
               ],
-              "name": "Zinc"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Silver",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41310",
+              "code": "41310"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Silver"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Lead",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14290",
+              "code": "14290"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Lead"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Zinc",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14290",
+              "code": "14290"
             }
           ]
         },
@@ -103,7 +115,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:15.430Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

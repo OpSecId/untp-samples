@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:198f49ad-3fe2-4638-8021-f2611af45b80",
+      "id": "urn:uuid:b206fafa-b442-4993-a77b-d60def532781",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4074635c865df00ca20",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4074635c865df00ca20",
           "name": "Fording River Operations",
           "description": "Fording River Operations is located approximately 29 km northeast of Elkford and is one of Teck's five metallurgical coal mines in southeast BC's Elk Valley.",
           "registeredId": "5fa1e4074635c865df00ca20",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Metallurgic"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "metallurgic",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14",
+              "code": "14"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:11.029Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

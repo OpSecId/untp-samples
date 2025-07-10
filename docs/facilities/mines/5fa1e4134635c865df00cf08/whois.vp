@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:a55b71c6-8360-4820-9325-1e4ed088eb05",
+      "id": "urn:uuid:d9b5889e-5046-4ec2-a81f-d048fd53be30",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4134635c865df00cf08",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4134635c865df00cf08",
           "name": "Kitsault Mine",
           "description": "Pre-construction activities at the Kitsault molybdenum project, located approximately 120 km north of Terrace in northwest BC, are complete. Mine construction is expected to resume once molybdenum prices improve.",
           "registeredId": "5fa1e4134635c865df00cf08",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Molybdenum"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Molybdenum",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41601",
+              "code": "41601"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:23.473Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

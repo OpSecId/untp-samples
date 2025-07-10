@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:f743862b-8166-448c-b6c7-0aceeae52f92",
+      "id": "urn:uuid:8d9a6ca8-70fe-4ffd-8a58-76c992a295d4",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4094635c865df00caab",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4094635c865df00caab",
           "name": "Gibraltar Mine",
           "description": "Located in south-central BC near Williams Lake, the Gibraltar copper-molybdenum mine is the largest employer in the Cariboo region.",
           "registeredId": "5fa1e4094635c865df00caab",
@@ -67,13 +67,21 @@
               "type": [
                 "Classification"
               ],
-              "name": "Molybdenum"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Copper",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14210",
+              "code": "14210"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Copper"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Molybdenum",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41601",
+              "code": "41601"
             }
           ]
         },
@@ -97,7 +105,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:13.706Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

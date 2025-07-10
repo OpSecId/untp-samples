@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:40c459f4-ca8d-436c-bfa3-51f3ebb7a06e",
+      "id": "urn:uuid:53f4b98c-c834-4cb8-ab77-52278b63b622",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e42f4635c865df00d64c",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e42f4635c865df00d64c",
           "name": "Silvertip Mine",
           "description": "The Silvertip mine project is located in northern BC, approximately 16 km south of the Yukon border and 90 km southwest of Watson Lake.",
           "registeredId": "5fa1e42f4635c865df00d64c",
@@ -67,19 +67,31 @@
               "type": [
                 "Classification"
               ],
-              "name": "Zinc"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Silver",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41310",
+              "code": "41310"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Silver"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Lead",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14290",
+              "code": "14290"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Lead"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Zinc",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14290",
+              "code": "14290"
             }
           ]
         },
@@ -103,7 +115,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:51.856Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

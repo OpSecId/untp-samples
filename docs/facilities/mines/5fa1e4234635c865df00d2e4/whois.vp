@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:6f30913b-2ca3-4052-87fc-829f56a1f320",
+      "id": "urn:uuid:b6ac84f6-f8f5-49c4-b23f-392047e3c76a",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4234635c865df00d2e4",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4234635c865df00d2e4",
           "name": "New Afton Mine",
           "description": "The New Afton copper-gold mine began production in June 2012, and an official opening ceremony was held in September 2012.",
           "registeredId": "5fa1e4234635c865df00d2e4",
@@ -67,19 +67,31 @@
               "type": [
                 "Classification"
               ],
-              "name": "Silver"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Copper",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14210",
+              "code": "14210"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Silver",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41310",
+              "code": "41310"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Copper"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -103,7 +115,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:39.946Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:01c2a58e-71ab-4c5f-a88a-1da4f0bbeecb",
+      "id": "urn:uuid:9c88b401-cfd7-4a19-a008-295a1dff7a09",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5f17e48e44fa55001bf96686",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5f17e48e44fa55001bf96686",
           "name": "Line Creek Operations",
           "description": "Line Creek Operations is located approximately 25 km north of Sparwood and is one of Teck's five metallurgical coal mines in southeast BC's Elk Valley.",
           "registeredId": "5f17e48e44fa55001bf96686",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Metallurgic"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "metallurgic",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14",
+              "code": "14"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-07-22T07:02:38.831Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

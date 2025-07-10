@@ -4,6 +4,17 @@ import os
 import uuid
 from difflib import SequenceMatcher
 
+from fixtures import (
+    BC_REG_ID_SCHEME, 
+    BC_MINE_ID_SCHEME, 
+    BC_MINE_PERMIT_REGULATION, 
+    BC_MINE_PERMIT_STANDARD,
+    BC_MINE_PERMIT_CRITERIA,
+    BC_MINE_PERMIT_CONFORMITY_CLAIM,
+    BC_MINE_COMMODITY_CLASSIFICATIONS,
+    BC_MINE_COMMODITY_CLASSIFICATION_SCHEME
+)
+
 
 MINE_COUNT = 1000
 DID_LOCATION = "did:web:opsecid.github.io:untp-samples"
@@ -178,19 +189,13 @@ class BCMinesClient:
             },
             "credentialSubject": {
                 "type": ["FacilityRecord"],
+                "id": facility_id,
                 "facility": {
                     "type": ["Facility"],
-                    "id": facility_id,
                     "name": facility_info.get('name'),
                     "description": facility_info.get('description'),
                     "registeredId": facility_info.get('_id'),
-                    "idScheme": {
-                        "type": [
-                            "IdentifierScheme"
-                        ],
-                        "id": "https://mines.nrs.gov.bc.ca/",
-                        "name": "BC Natural Resource Online Services"
-                    },
+                    "idScheme": BC_MINE_ID_SCHEME,
                     "countryOfOperation": "CA",
                     "operatedByParty": operating_organisation,
                     "locationInformation": {
@@ -200,72 +205,13 @@ class BCMinesClient:
                         }
                     },
                     "processCategory": [
-                        {
-                            "type": [
-                                "Classification"
-                            ],
-                            # "id": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
-                            # "code": "46410",
-                            "name": commodity,
-                            # "schemeID": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
-                            # "schemeName": "UN Central Product Classification (CPC)"
-                        } for commodity in facility_info.get('commodities')
+                        BC_MINE_COMMODITY_CLASSIFICATION_SCHEME | 
+                        BC_MINE_COMMODITY_CLASSIFICATIONS[commodity.lower().replace(' ', '_')] 
+                        for commodity in facility_info.get('commodities')
                     ]
                 },
-                "conformityClaim": [
-                    {
-                        "type": ["Claim", "Declaration"],
-                        # "id": "",
-                        # "description": "",
-                        "referenceStandard": {
-                            "type": ["Standard"],
-                            "id": "",
-                            "name": "",
-                            # "issueDate": "2023-12-05",
-                            # "issuingParty": {
-                            #     "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
-                            #     "name": "Sample Company Pty Ltd.",
-                            #     "registeredId": "90664869327",
-                            #     "idScheme": {
-                            #         "type": ["IdentifierScheme"],
-                            #         "id": "https://id.gs1.org/01/",
-                            #         "name": "Global Trade Identification Number (GTIN)"
-                            #     }
-                            # }
-                        },
-                        "referenceRegulation": {
-                            "type": ["Regulation"],
-                            # "id": "https://www.legislation.gov.au/F2008L02309/latest/versions",
-                            # "name": "NNational Greenhouse and Energy Reporting (Measurement) Determination",
-                            # "jurisdictionCountry": "AU",
-                            # "administeredBy": {
-                            #     "id": "https://abr.business.gov.au/ABN/View?abn=90664869327",
-                            #     "name": "Sample Company Pty Ltd.",
-                            #     "registeredId": "90664869327",
-                            #     "idScheme": {
-                            #     "type": [
-                            #         "IdentifierScheme"
-                            #     ],
-                            #     "id": "https://id.gs1.org/01/",
-                            #     "name": "Global Trade Identification Number (GTIN)"
-                            #     }
-                            # },
-                            # "effectiveDate": "2024-03-20"
-                        }
-                    }
-                ],
-                "assessmentCriteria": [
-                    # {
-                    #     "type": ["Criterion"],
-                    #     "id": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
-                    #     "name": "GBA Battery rule book v2.0 battery assembly guidelines.",
-                    #     "description": "Battery is designed for easy disassembly and recycling at end-of-life.",
-                    #     "conformityTopic": "circularity.content",
-                    #     "status": "proposed",
-                    #     "performanceLevel": "\"Category 3 recyclable with 73% recyclability\"",
-                    #     "tags": "The quick brown fox jumps over the lazy dog."
-                    # }
-                ],
+                "conformityClaim": [BC_MINE_PERMIT_CONFORMITY_CLAIM],
+                "assessmentCriteria": [BC_MINE_PERMIT_CRITERIA],
                 "assessmentDate": facility_info.get('validFrom'),
                 "conformance": True,
                 "conformityTopic": "governance.compliance",
@@ -298,11 +244,7 @@ class BCMinesClient:
                 "name": organisation_info.get('name'),
                 "registerType": "Business",
                 "registeredId": organisation_info.get('registeredId'),
-                "idScheme": {
-                    "type": ["IdentifierScheme"],
-                    "id": "https://www.bcregistry.gov.bc.ca/",
-                    "name": "BC Registry"
-                }
+                "idScheme": BC_REG_ID_SCHEME
             }
         }
 
@@ -314,6 +256,7 @@ mine_count = len(mine_records)
 matches = []
 no_matches = []
 statuses = []
+commodities = []
 
 for idx, mine_record in enumerate(mine_records):
     print()
@@ -329,6 +272,8 @@ for idx, mine_record in enumerate(mine_records):
     # for idx, permit_record in enumerate(permit_records):
     #     permit_record["url"] = mine_client.get_permit_url(permit_record.get("_id"))
     #     permit_records[idx] = permit_record
+    
+    commodities += mine_record.get('commodities')
 
     permittee = mine_record.get('permittee')
     organisation_info = mine_client.get_organisation_info(permittee)
@@ -378,11 +323,7 @@ for idx, mine_record in enumerate(mine_records):
         "id": organisation_id,
         "name": organisation_info.get('name'),
         "registeredId": organisation_info.get('registrationId'),
-        "idScheme": {
-            "type": ["IdentifierScheme"],
-            "id": "https://www.bcregistry.gov.bc.ca/",
-            "name": "BC Registry"
-        }
+        "idScheme": BC_REG_ID_SCHEME
     }
     dfr_credential = mine_client.create_digital_facility_record(facility_id, mine_record, operating_organisation)
     whois_vp = mine_client.create_whois_vp(facility_id, dfr_credential)
@@ -390,11 +331,13 @@ for idx, mine_record in enumerate(mine_records):
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, 'w+') as f:
         f.write(json.dumps(whois_vp, indent=2))
-    
+
+commodities = list(set(commodities))
 print()
 print(f'Matches: {len(matches)}/{mine_count}')
 print(f'No Matches: {len(no_matches)}/{mine_count}')
 print(statuses)
+print(commodities)
 """
 Closed Care & Maintenance
 Closed Reclamation

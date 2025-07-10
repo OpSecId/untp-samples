@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:bfefb02c-ae8f-4ebb-9619-6b0204539d2c",
+      "id": "urn:uuid:7cc3f656-1ce8-4c82-9901-1fb772f69d71",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4284635c865df00d490",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4284635c865df00d490",
           "name": "Quinsam Coal Mine",
           "description": "<p>Quinsam is located on Vancouver Island approximately 18 km southwest of Campbell River.</p>",
           "registeredId": "5fa1e4284635c865df00d490",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Thermal Coal"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Thermal Coal",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#11",
+              "code": "11"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:44.962Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:3b6379b1-eb94-491d-a90a-b1b13171c0c3",
+      "id": "urn:uuid:c52ffbb0-3a35-4d6a-9f61-7df6fe483ed3",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4444635c865df00d956",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4444635c865df00d956",
           "name": "Zip Mill",
           "description": "Zip Mill is located near Grand Forks and is currently closed.",
           "registeredId": "5fa1e4444635c865df00d956",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Silver"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Silver",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41310",
+              "code": "41310"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:14:12.552Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

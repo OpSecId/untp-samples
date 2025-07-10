@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:d8fc8825-3bfe-45be-83b6-26e27858973e",
+      "id": "urn:uuid:790c29aa-0049-4e67-a4d6-5ae4af2aadc9",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e41f4635c865df00d1b7",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e41f4635c865df00d1b7",
           "name": "Mount Polley Mine",
           "description": "<p>Located near the town of Likely in central British Columbia, the Mount Polley copper-gold mine opened in 1997 and currently employs about 340 people.</p>",
           "registeredId": "5fa1e41f4635c865df00d1b7",
@@ -67,19 +67,31 @@
               "type": [
                 "Classification"
               ],
-              "name": "Silver"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Silver",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41310",
+              "code": "41310"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Copper",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14210",
+              "code": "14210"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Copper"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -103,7 +115,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:35.021Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

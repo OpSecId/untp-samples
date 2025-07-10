@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:1e29c083-2f44-4c23-9bef-63810bf8736f",
+      "id": "urn:uuid:a6901500-ac04-480e-bf39-a2145c104d51",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f04635c865df00c4aa",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f04635c865df00c4aa",
           "name": "Beaverdell Mine",
           "description": "Located 87 km from Kelowna on Highway 33, the Beaverdell mine was previously known as the Highland Bell mine. Mining operations took place at the site almost continuously from the early 1900s until the mine permanently closed in 1991, and silver was the primary commodity produced. Teck Corporation Limited acquired the mine in 1969. ",
           "registeredId": "5fa1e3f04635c865df00c4aa",
@@ -67,19 +67,31 @@
               "type": [
                 "Classification"
               ],
-              "name": "Zinc"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Silver",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41310",
+              "code": "41310"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Silver"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Lead",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14290",
+              "code": "14290"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Lead"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Zinc",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14290",
+              "code": "14290"
             }
           ]
         },
@@ -103,7 +115,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:12:48.457Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

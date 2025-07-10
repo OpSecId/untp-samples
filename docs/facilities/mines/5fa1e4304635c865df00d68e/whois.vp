@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:f22d09e1-2e91-4070-875f-617f3da0b02b",
+      "id": "urn:uuid:813ea18c-90aa-4c69-b5d4-3235484e40d4",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4304635c865df00d68e",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4304635c865df00d68e",
           "name": "Snip Mine",
           "description": "The past-producing Snip mine is located in the Iskut River basin, approximately 100 km northwest of Stewart. The mine was in production from January 1991 to June 1999 and was first operated by Cominco Ltd. and then, starting in 1996, by Homestake Resources Ltd. Barrick Gold Inc. owned Snip from 2001 to July 2017, as part of its acquisition of Homestake Canada Inc. The current owner, Skeena Resources Ltd., acquired Snip from Barrick Gold in July 2017.",
           "registeredId": "5fa1e4304635c865df00d68e",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:52.646Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:0af08ac9-98f7-4f0d-b038-9c0c3d6042dc",
+      "id": "urn:uuid:d16d9632-5b58-4ce0-8c57-d1e3520bd925",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4284635c865df00d401",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4284635c865df00d401",
           "name": "QR Mine",
           "description": "The QR gold mine is located 58 km southeast of Quesnel. Mining occurred from 1977 to 2008. The mine's 900 tonne/day gold milling facility is permitted to process ore from Barkerville Gold Mines' Bonanza Ledge mine, but is currently in care and maintenance.",
           "registeredId": "5fa1e4284635c865df00d401",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:44.106Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:9585b5af-e207-4120-891c-53d80d0a0d83",
+      "id": "urn:uuid:ee1ec672-beb1-4b34-b341-b28ca59bb769",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3fa4635c865df00c661",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3fa4635c865df00c661",
           "name": "Cassiar Mine",
           "description": "Reserves at the Cassiar asbestos mine were exhausted in June 1989, after 38 years of production.  Production at the McDame deposit commenced in February 1991 and ceased the following year. In its time, Cassiar-McDame was one of the largest asbestos mines in Canada. Large, unknown quantities of jade were also produced over the years. Cassiar-McDame was exempted from the Chief Inspector of Mines' 2014/2015 orders related to dam safety as the tailings storage facility (TSF) does not have any dams.",
           "registeredId": "5fa1e3fa4635c865df00c661",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Asbestos"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Asbestos",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#37570",
+              "code": "37570"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:12:58.513Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

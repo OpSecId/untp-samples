@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:57c651e1-f4a0-4c36-9b18-5fcde6a7fb37",
+      "id": "urn:uuid:6cd89719-6506-4a2d-9e31-f33f28480652",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4054635c865df00ca07",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4054635c865df00ca07",
           "name": "Eskay Creek Mine",
           "description": "Eskay Creek operated from 1994 to 2008 in northwestern BC. Skeena Resources Ltd. purchased the mine from Barrick Gold Inc. in December 2017. The mine was exempted from the Chief Inspector of Mines' 2014/2015 orders related to dam safety as the tailings storage facility does not have any dams.",
           "registeredId": "5fa1e4054635c865df00ca07",
@@ -67,19 +67,31 @@
               "type": [
                 "Classification"
               ],
-              "name": "Zinc"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Silver",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41310",
+              "code": "41310"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Silver"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Lead",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14290",
+              "code": "14290"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Lead"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Zinc",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14290",
+              "code": "14290"
             }
           ]
         },
@@ -103,7 +115,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:09.496Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

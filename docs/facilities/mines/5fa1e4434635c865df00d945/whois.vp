@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:cce98fff-91cf-4474-9e14-b2a12e6b00db",
+      "id": "urn:uuid:528a9670-7537-44ba-a422-aadb564cf34a",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4434635c865df00d945",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4434635c865df00d945",
           "name": "Yellowjacket Gold Mine (Atlin Goldfields)",
           "description": "Yellowjacket is an exploration-phase project located in northwest BC, approximately 9 km east of Atlin. Commissioning and test work on the mill facility at Yellowjacket was completed in June 2009 and stockpiled material from 2008 bulk sample work was processed for approximately two weeks. Excavation activity and expansion of the existing pit took place from mid-August to mid-September. Approximately 40,000 tonnes of material was mined, with approximately 9,000 tonnes of material stockpiled for processing. ",
           "registeredId": "5fa1e4434635c865df00d945",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:14:11.589Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

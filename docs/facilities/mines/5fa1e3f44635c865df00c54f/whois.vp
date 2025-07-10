@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:bffd32ed-229f-4268-ae74-f9118d1c37f5",
+      "id": "urn:uuid:e05e08b6-86fe-42d2-9a7a-cf7976bac315",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f44635c865df00c54f",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f44635c865df00c54f",
           "name": "Bralorne Gold Mine",
           "description": "Avino Silver & Gold Mines Ltd. acquired Bralorne Gold Mines in October of 2014. Bralorne went into care and maintenance in December 2014.",
           "registeredId": "5fa1e3f44635c865df00c54f",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:12:52.821Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

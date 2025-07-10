@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:2d9e197f-2469-4f55-808e-d4ba1a54a6f4",
+      "id": "urn:uuid:4836b091-ea12-46f0-820f-38ff694ecd21",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e43c4635c865df00d802",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e43c4635c865df00d802",
           "name": "Trend-Roman Mine",
           "description": "Peace River Coal's Trend coal mine, located near Tumbler Ridge in northeast BC, began production in 2006. Operations were to be integrated with those of the Roman coal mine; however, as a result of low coal prices, Trend-Roman has been in care and maintenance since January 2015.",
           "registeredId": "5fa1e43c4635c865df00d802",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Metallurgic"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "metallurgic",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14",
+              "code": "14"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:14:04.974Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

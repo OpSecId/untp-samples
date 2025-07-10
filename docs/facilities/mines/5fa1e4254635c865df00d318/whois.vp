@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:349558e1-d5da-48b2-8f93-19beb70fe5f4",
+      "id": "urn:uuid:fa519565-4794-4f5b-8cab-8269d05c5730",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4254635c865df00d318",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4254635c865df00d318",
           "name": "Orca Sand & Gravel Project",
           "description": "<p>The Orca quarry is located on the northeast coast of Vancouver Island near Port McNeill. The first shipment of sand and gravel from the Orca quarry departed for San Francisco in April 2007.</p>",
           "registeredId": "5fa1e4254635c865df00d318",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Sand and Gravel"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Sand and Gravel",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#15320",
+              "code": "15320"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:41.293Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

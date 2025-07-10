@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:bd195760-a1e1-4162-a5c5-82c71a8f3f33",
+      "id": "urn:uuid:6bc59eee-60ee-45d7-8c18-b8ed2ff919c0",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4034635c865df00c966",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4034635c865df00c966",
           "name": "Endako Mine",
           "description": "Endako began operations in 1965 and is located within the municipal boundary of Fraser Lake, on the Yellowhead Highway between Vanderhoof and Burns Lake in the Regional District of Bulkley-Nechako. The mine has been in care and maintenance since December 2015 due to continued weakness of the molybdenum market.",
           "registeredId": "5fa1e4034635c865df00c966",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Molybdenum"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Molybdenum",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41601",
+              "code": "41601"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:07.030Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

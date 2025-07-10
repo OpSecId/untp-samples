@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:bac75900-a92a-429d-8277-e55344fff752",
+      "id": "urn:uuid:30e497b6-b941-4d0f-a9e3-1a5617132616",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:6581f71e18456f001bc7a3c4",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:6581f71e18456f001bc7a3c4",
           "name": "Goldwedge",
           "description": "Goldwedge Mines Inc.  is proposing to develop the Goldwedge Project in a mountainous region of northwestern British Columbia. The Project is located at latitude 56.483503 by longitude -130.204028o, approximately 950 kilometres (km) northwest of Vancouver, 70 km north-northwest of Stewart.",
           "registeredId": "6581f71e18456f001bc7a3c4",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2023-12-19T20:03:42.691Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

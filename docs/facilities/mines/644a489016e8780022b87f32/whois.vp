@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:ee0540f2-e0e1-4db5-9f6e-a350a2e67a46",
+      "id": "urn:uuid:d4a16671-4002-4c32-aed8-5e47b0442ada",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:644a489016e8780022b87f32",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:644a489016e8780022b87f32",
           "name": "Blackwater Mine",
           "description": "BLACKWATER GOLD - This mine project is being developed by Artemis Gold Inc for the extraction of gold and silver from an open pit mine, and ore processing facilities with a milling rate capacity of 60,000 t/d (22 Mt/y), over 17 years. ",
           "registeredId": "644a489016e8780022b87f32",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2023-04-27T10:04:00.797Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

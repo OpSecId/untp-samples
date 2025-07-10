@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:c003a358-7a34-4af1-b265-69f15fb875df",
+      "id": "urn:uuid:88291198-1301-4e5d-be64-3d9439ea358e",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3ec4635c865df00c420",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3ec4635c865df00c420",
           "name": "Afton-Ajax Mine",
           "description": "The Afton/Ajax/Abacus copper-gold mining project is located near, and partially within, the southern boundary of the City of Kamloops. Exploration in the area began in the 1880s and continued intermittently until the 1980s. ",
           "registeredId": "5fa1e3ec4635c865df00c420",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Copper"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Copper",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14210",
+              "code": "14210"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:12:44.177Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

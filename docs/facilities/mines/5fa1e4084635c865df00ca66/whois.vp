@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:2ca5074d-3309-4147-a312-d59ab9a51868",
+      "id": "urn:uuid:ed79b13b-813f-45d7-b326-2095c0707b0d",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4084635c865df00ca66",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4084635c865df00ca66",
           "name": "Giant Nickel Mine",
           "description": "The past-producing Giant Nickel/Pride of Emory mine is located in south-central BC, approximately 10 km north of Hope. This nickel mine operated from 1958 to 1974.",
           "registeredId": "5fa1e4084635c865df00ca66",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Nickel"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Nickel",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14220",
+              "code": "14220"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:12.849Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

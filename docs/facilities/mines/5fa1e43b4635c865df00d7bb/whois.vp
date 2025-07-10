@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:c03bed2d-6e15-495a-afc3-7fa0e05d0c63",
+      "id": "urn:uuid:a09c130a-bd7e-4998-bd85-713932f9096d",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e43b4635c865df00d7bb",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e43b4635c865df00d7bb",
           "name": "Taurus Gold Mine",
           "description": "The Taurus gold project is part of the Cassiar Gold Camp, located between Cassiar and Jade City in northwest BC. The Taurus mine operated from 1981 to 1988 and produced approximately 35,000 ounces of gold during that time. The Cassiar Gold Camp also includes the Table Mountain project. ",
           "registeredId": "5fa1e43b4635c865df00d7bb",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:14:03.096Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

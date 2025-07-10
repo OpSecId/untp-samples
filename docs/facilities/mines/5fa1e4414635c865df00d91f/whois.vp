@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:8bee39cf-b603-4cc0-93c8-6c132c4bb9ad",
+      "id": "urn:uuid:1aac98f2-3bf0-4031-a0df-2fbc574838f5",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4414635c865df00d91f",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4414635c865df00d91f",
           "name": "Wolverine Coal Mine",
           "description": "Located southwest of Tumbler Ridge in northeast BC, the Wolverine coal mine re-opened in January 2017, nearly three years after being placed in care and maintenance.",
           "registeredId": "5fa1e4414635c865df00d91f",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Metallurgic"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "metallurgic",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14",
+              "code": "14"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:14:09.620Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:2bd61106-47f6-41b3-ad3f-0cd53cb0b816",
+      "id": "urn:uuid:da1d0a0a-5d83-4f7a-889e-a94f1b74524a",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e42c4635c865df00d5bf",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e42c4635c865df00d5bf",
           "name": "Shasta Baker Mine",
           "description": "The Shasta mine is located 11 km from the Baker mill and camp facilities and approximately 450 km north of Prince George in north-central BC. The mineral deposit was discovered in the 1970s by Newmont Mining, and explored in the 1980s by Homestake and Esso Minerals. Sable Resources acquired the mine in 1994. Mining operations took place intermittently from 1989 to 2013, when the mine went into care and maintenance.",
           "registeredId": "5fa1e42c4635c865df00d5bf",
@@ -67,13 +67,21 @@
               "type": [
                 "Classification"
               ],
-              "name": "Silver"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Silver",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41310",
+              "code": "41310"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -97,7 +105,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:48.208Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

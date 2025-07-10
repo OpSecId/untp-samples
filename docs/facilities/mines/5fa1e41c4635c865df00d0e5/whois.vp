@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:5eafae73-6260-45be-a751-50c6d5a8304d",
+      "id": "urn:uuid:3483e0da-62fd-44b6-9b7e-c1062a1236d7",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e41c4635c865df00d0e5",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e41c4635c865df00d0e5",
           "name": "Moberly Silica Mine",
           "description": "The Moberly silica-sand quarry and processing facility is located near Golden in southeast B.C. Mining at the Moberly Silica quarry began in 1980.",
           "registeredId": "5fa1e41c4635c865df00d0e5",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Silica"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Silica",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#34270",
+              "code": "34270"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:32.012Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

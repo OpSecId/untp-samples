@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:ebe8dc51-c95f-4b35-a746-e4a34f79062a",
+      "id": "urn:uuid:f4a9b0df-cf46-451c-9acd-8d04837f8660",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4264635c865df00d34f",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4264635c865df00d34f",
           "name": "Pinchi Lake Mine",
           "description": "Pinchi is a closed mine located on the north shore of Pinchi Lake, in north-central BC, approximately 25 km northwest of Fort St. James. This historic mercury mine was originally owned and operated by the Consolidated Mining and Smelting Company, which later became Cominco Ltd., a predecessor of current owner Teck. Pinchi operated from 1940-44, and, after the site was re-developed in 1968, the mine operated again until 1975. The mine was in care and maintenance from 1975 to 2010 when, in cooperation with local First Nations representatives from the Tl'azt'en Nation and the Nak'azdli Bands, Teck initiated the decommissioning and reclamation of the site. This was a three-year, $22 million reclamation project for which Teck won the 2012 Jake McDonald Reclamation Award.",
           "registeredId": "5fa1e4264635c865df00d34f",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Mercury"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Mercury",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#34250",
+              "code": "34250"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:42.774Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:084a41d0-cdc8-467b-8e9d-3d83147299e3",
+      "id": "urn:uuid:d5cea4fd-5f70-4a47-934b-312ac705ded0",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e40a4635c865df00cb35",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e40a4635c865df00cb35",
           "name": "Golden Bear Mine",
           "description": "Golden Bear is located approximately 100 km west of Dease Lake, in northwest BC. The mine produced gold from 1989 to 1994, and ran a seasonal heap leaching operation from 1997 to 2001. Closure and reclamation activities at the site were essentially completed by 2004.",
           "registeredId": "5fa1e40a4635c865df00cb35",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:14.519Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

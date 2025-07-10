@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:734260bc-a4ef-47f4-892e-b7b2fc90d770",
+      "id": "urn:uuid:b55c3ced-1a0b-4b9d-a65c-a2e74b54cdea",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e40f4635c865df00cd2a",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e40f4635c865df00cd2a",
           "name": "Highland Valley Copper Mine",
           "description": "Teck's Highland Valley Copper (HVC) mine is located approximately 17 km west of Logan Lake and about 50 km southwest of Kamloops in south-central BC. HVC produces both copper and molybdenum concentrates through autogenous and semi-autogenous grinding and flotation. Once processed, the metal concentrates are exported overseas, where the majority is sold under long-term sales contracts to smelters.",
           "registeredId": "5fa1e40f4635c865df00cd2a",
@@ -67,13 +67,21 @@
               "type": [
                 "Classification"
               ],
-              "name": "Molybdenum"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Copper",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14210",
+              "code": "14210"
             },
             {
               "type": [
                 "Classification"
               ],
-              "name": "Copper"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Molybdenum",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41601",
+              "code": "41601"
             }
           ]
         },
@@ -97,7 +105,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:19.142Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

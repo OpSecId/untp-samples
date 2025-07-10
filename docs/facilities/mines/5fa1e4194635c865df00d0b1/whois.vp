@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:e3f63e53-17e7-47ef-9682-37d5ba1df9ea",
+      "id": "urn:uuid:24f41dea-91b5-418e-95b5-9956a92fc651",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4194635c865df00d0b1",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e4194635c865df00d0b1",
           "name": "Max Moly Mine",
           "description": "The Max underground molybdenum mine, located approximately 60 km south of Revelstoke in southeast BC, operated from 2007 to 2011.",
           "registeredId": "5fa1e4194635c865df00d0b1",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Magnetite"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Magnetite",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14100",
+              "code": "14100"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:13:29.811Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:d53ccacc-679d-428b-aa51-278cfb880024",
+      "id": "urn:uuid:a9fafedd-72ac-45ab-b505-eaf2ff073613",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f74635c865df00c5e4",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:5fa1e3f74635c865df00c5e4",
           "name": "Brule Coal Mine",
           "description": "<p>The Brule mine (originally called the Dillon mine) is located south of Chetwynd in northeast BC. The mine began production in December 2004 and went into care and maintenance in July 2014 due to low coal prices. Brule re-opened under new ownership in October 2016.</p>",
           "registeredId": "5fa1e3f74635c865df00c5e4",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Metallurgic"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "metallurgic",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#14",
+              "code": "14"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2020-11-03T23:12:55.471Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",

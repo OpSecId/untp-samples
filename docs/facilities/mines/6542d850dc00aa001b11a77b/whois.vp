@@ -16,7 +16,7 @@
         "DigitalFacilityRecord",
         "VerifiableCredential"
       ],
-      "id": "urn:uuid:a8dc4297-6339-41d2-8343-b28263a11237",
+      "id": "urn:uuid:afb79d28-8901-4b71-912d-1450a2466b6f",
       "issuer": {
         "id": "did:web:opsecid.github.io:untp-samples:regulators:chief-permitting-inspector",
         "name": "Chief Permitting Inspector"
@@ -25,11 +25,11 @@
         "type": [
           "FacilityRecord"
         ],
+        "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:6542d850dc00aa001b11a77b",
         "facility": {
           "type": [
             "Facility"
           ],
-          "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:6542d850dc00aa001b11a77b",
           "name": "Cariboo Gold Project",
           "description": "CARIBOO GOLD PROJECT \nMines Act and Environmental Management Act Joint Permit Application\nThe Public Comment Period is now closed.",
           "registeredId": "6542d850dc00aa001b11a77b",
@@ -67,7 +67,11 @@
               "type": [
                 "Classification"
               ],
-              "name": "Gold"
+              "schemeID": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf",
+              "schemeName": "Central Product Classification (CPC) Version 2.1",
+              "name": "Gold",
+              "id": "https://unstats.un.org/unsd/classifications/unsdclassifications/cpcv21.pdf#41320",
+              "code": "41320"
             }
           ]
         },
@@ -91,7 +95,13 @@
             }
           }
         ],
-        "assessmentCriteria": [],
+        "assessmentCriteria": [
+          {
+            "type": [
+              "Criterion"
+            ]
+          }
+        ],
         "assessmentDate": "2023-11-01T22:59:28.944Z",
         "conformance": true,
         "conformityTopic": "governance.compliance",
