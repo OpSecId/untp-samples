@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "holder": "did:web:opsecid.github.io:untp-samples:organisations:FM0818758",
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dia/0.6.0/"
+      ],
+      "type": [
+        "DigitalIdentityAnchor",
+        "VerifiableCredential"
+      ],
+      "id": "urn:uuid:86be28cd-6786-4ec5-b903-5e648ded771f",
+      "issuer": {
+        "id": "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies",
+        "name": "Registrar of Companies"
+      },
+      "credentialSubject": {
+        "type": [
+          "RegisteredIdentity"
+        ],
+        "id": "did:web:opsecid.github.io:untp-samples:organisations:FM0818758",
+        "name": "CONUMA COAL RESOURCES",
+        "registerType": "Business",
+        "registeredId": null,
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://www.bcregistry.gov.bc.ca/",
+          "name": "BC Registry"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+    "@context": [
+        "https://w3id.org/security/multikey/v1",
+        "https://www.w3.org/ns/did/v1"
+    ],
+    "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:0300004",
+    "authentication": [
+        "did:web:opsecid.github.io:untp-samples:facilities:mines:0300004#z6Mks9N8UH4cKcnNL8bwUGgrfkAZRz9FamFFkwLNenKdTNYR"
+    ],
+    "assertionMethod": [
+        "did:web:opsecid.github.io:untp-samples:facilities:mines:0300004#z6Mks9N8UH4cKcnNL8bwUGgrfkAZRz9FamFFkwLNenKdTNYR"
+    ],
+    "verificationMethod": [
+        {
+            "id": "did:web:opsecid.github.io:untp-samples:facilities:mines:0300004#z6Mks9N8UH4cKcnNL8bwUGgrfkAZRz9FamFFkwLNenKdTNYR",
+            "type": "Multikey",
+            "controller": "did:web:opsecid.github.io:untp-samples:facilities:mines:0300004",
+            "publicKeyMultibase": "z6Mks9N8UH4cKcnNL8bwUGgrfkAZRz9FamFFkwLNenKdTNYR"
+        }
+    ],
+    "alsoKnownAs": [
+        "did:webvh:QmNfUt4j4vPJXutjbbCY5b3uWCb8MYaWCoeErniw31tP1a:opsecid.github.io:untp-samples:facilities:mines:0300004"
+    ]
+}

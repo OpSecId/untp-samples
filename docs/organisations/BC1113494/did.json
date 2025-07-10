@@ -1,0 +1,13 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1"
+  ],
+  "id": "did:web:opsecid.github.io:untp-samples:organisations:BC1113494",
+  "service": [
+    {
+      "id": "did:web:opsecid.github.io:untp-samples:organisations:BC1113494#orgbook",
+      "type": "LinkedDomain",
+      "serviceEndpoint": "https://orgbook.gov.bc.ca/entity/BC1113494"
+    }
+  ]
+}

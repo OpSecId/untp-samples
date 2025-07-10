@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "holder": "did:web:opsecid.github.io:untp-samples:organisations:BC0884663",
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dia/0.6.0/"
+      ],
+      "type": [
+        "DigitalIdentityAnchor",
+        "VerifiableCredential"
+      ],
+      "id": "urn:uuid:42431232-b138-4ca6-9b76-83658ef32fda",
+      "issuer": {
+        "id": "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies",
+        "name": "Registrar of Companies"
+      },
+      "credentialSubject": {
+        "type": [
+          "RegisteredIdentity"
+        ],
+        "id": "did:web:opsecid.github.io:untp-samples:organisations:BC0884663",
+        "name": "KGHM AJAX MINING INC.",
+        "registerType": "Business",
+        "registeredId": null,
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://www.bcregistry.gov.bc.ca/",
+          "name": "BC Registry"
+        }
+      }
+    }
+  ]
+}

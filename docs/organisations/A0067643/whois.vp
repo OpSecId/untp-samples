@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "holder": "did:web:opsecid.github.io:untp-samples:organisations:A0067643",
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dia/0.6.0/"
+      ],
+      "type": [
+        "DigitalIdentityAnchor",
+        "VerifiableCredential"
+      ],
+      "id": "urn:uuid:dc9bfb15-dc22-46aa-b12f-9696d23734c6",
+      "issuer": {
+        "id": "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies",
+        "name": "Registrar of Companies"
+      },
+      "credentialSubject": {
+        "type": [
+          "RegisteredIdentity"
+        ],
+        "id": "did:web:opsecid.github.io:untp-samples:organisations:A0067643",
+        "name": "CASSIAR JADE CONTRACTING INC.",
+        "registerType": "Business",
+        "registeredId": null,
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://www.bcregistry.gov.bc.ca/",
+          "name": "BC Registry"
+        }
+      }
+    }
+  ]
+}

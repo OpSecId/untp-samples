@@ -1,0 +1,42 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "holder": "did:web:opsecid.github.io:untp-samples:organisations:BC1268092",
+  "verifiableCredential": [
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2",
+        "https://test.uncefact.org/vocabulary/untp/dia/0.6.0/"
+      ],
+      "type": [
+        "DigitalIdentityAnchor",
+        "VerifiableCredential"
+      ],
+      "id": "urn:uuid:6ffcf7f1-7407-42d0-811e-0db10b6c065f",
+      "issuer": {
+        "id": "did:web:opsecid.github.io:untp-samples:regulators:registrar-of-companies",
+        "name": "Registrar of Companies"
+      },
+      "credentialSubject": {
+        "type": [
+          "RegisteredIdentity"
+        ],
+        "id": "did:web:opsecid.github.io:untp-samples:organisations:BC1268092",
+        "name": "AVANTI KITSAULT MINE LTD.",
+        "registerType": "Business",
+        "registeredId": null,
+        "idScheme": {
+          "type": [
+            "IdentifierScheme"
+          ],
+          "id": "https://www.bcregistry.gov.bc.ca/",
+          "name": "BC Registry"
+        }
+      }
+    }
+  ]
+}
